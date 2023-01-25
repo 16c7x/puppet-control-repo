@@ -26,6 +26,9 @@ File { backup => false }
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
   # We're not using this, use site-modules/profile/manifests/master/nodegroups.pp instead.
+  notify { 'A notification':
+    message => 'hello',
+  }
 }
 
 
