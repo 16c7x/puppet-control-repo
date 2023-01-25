@@ -27,7 +27,7 @@ File { backup => false }
 node default {
   # We're not using this, use site-modules/profile/manifests/master/nodegroups.pp instead.
   notify { 'A notification':
-    message => 'hello',
+    message => $migration_server,
   }
 }
 
