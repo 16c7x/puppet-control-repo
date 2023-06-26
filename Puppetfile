@@ -40,7 +40,6 @@ mod 'puppet-mongodb', '3.1.0'
 mod 'puppet-telegraf', '3.1.0'
 mod 'puppet-grafana', '7.0.0'
 mod 'puppetlabs-puppet_metrics_dashboard', '2.4.0'
-mod 'puppetlabs-postgresql', '7.2.0'
 mod 'puppetlabs-peadm', '3.11.1'
 
 
