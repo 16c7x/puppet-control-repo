@@ -73,23 +73,6 @@ mod "puppet-node_manager",
 #  :git  =>  'git@github.com:WhatsARanjit/puppet-node_manager.git',
 #  :ref  =>  'master'
 
-#### Some prosvcs modules for generating reports  
-mod "module_audit",
-  :git  =>  'git@github.com:16c7x/prosvc-module_audit.git',
-  :ref  =>  'master'
-
-mod "adviser",
-  :git  =>  'git@github.com:16c7x/prosvc-adviser.git',
-  :ref  =>  'master'
-
-#mod "postgresura",
-#  :git  =>  'git@github.com:16c7x/postgresura.git',
-#  :ref  =>  'dev'
-
-mod "mongodbura",
-  :git  =>  'git@github.com:16c7x/scb_mongo_ura.git',
-  :ref  =>  'dev'
-
 #mod "factconverter",
 #  :git  =>  'git@github.com:16c7x/factconverter.git',
 #  :ref  =>  'main'
