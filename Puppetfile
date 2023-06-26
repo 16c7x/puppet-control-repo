@@ -44,8 +44,8 @@ mod 'puppetlabs-postgresql', '7.2.0'
 mod 'puppetlabs-peadm', '3.11.1'
 
 
-mod "oratune",
-  :git  =>  'git@github.com:16c7x/oratune.git',
+mod "scratch",
+  :git  =>  'git@github.com:16c7x/acratch.git',
   :ref  =>  'main'
 
 mod "cis_profile",
