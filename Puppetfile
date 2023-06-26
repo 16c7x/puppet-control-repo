@@ -45,7 +45,7 @@ mod 'puppetlabs-peadm', '3.11.1'
 
 
 mod "scratch",
-  :git  =>  'git@github.com:16c7x/acratch.git',
+  :git  =>  'git@github.com:16c7x/scratch.git',
   :ref  =>  'main'
 
 mod "cis_profile",
