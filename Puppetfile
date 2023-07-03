@@ -43,10 +43,6 @@ mod "cis_profile",
   :git  =>  'git@github.com:16c7x/cis_profile.git',
   :ref  =>  'master'
 
-mod "autosign",
-  :git  =>  'git@github.com:danieldreier/puppet-autosign.git',
-  :ref  =>  'master'
-
 mod "ssh",
   :git  =>  'git@github.com:16c7x/puppet-module-ssh.git',
   #:git  =>  'git@github.com:ghoneycutt/puppet-module-ssh.git',
