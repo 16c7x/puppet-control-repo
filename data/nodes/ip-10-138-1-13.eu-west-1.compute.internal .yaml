@@ -1,0 +1,2 @@
+puppet_enterprise::profile::agent::pcp_broker_list:
+- ip-10-138-1-13.eu-west-1.compute.internal 
