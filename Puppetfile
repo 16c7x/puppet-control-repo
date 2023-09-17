@@ -35,21 +35,21 @@ mod 'puppet-grafana', '7.0.0'
 mod 'puppetlabs-puppet_metrics_dashboard', '2.4.0'
 mod 'puppetlabs-peadm', '3.11.1'
 
-mod "scratch",
-  :git  =>  'git@github.com:16c7x/scratch.git',
-  :ref  =>  'main'
+#mod "scratch",
+#  :git  =>  'git@github.com:16c7x/scratch.git',
+#  :ref  =>  'main'
 
-mod "cis_profile",
-  :git  =>  'git@github.com:16c7x/cis_profile.git',
-  :ref  =>  'master'
+#mod "cis_profile",
+#  :git  =>  'git@github.com:16c7x/cis_profile.git',
+#  :ref  =>  'master'
 
-mod "ssh",
-  :git  =>  'git@github.com:16c7x/puppet-module-ssh.git',
-  #:git  =>  'git@github.com:ghoneycutt/puppet-module-ssh.git',
-  :ref  =>  'master'
+#mod "ssh",
+#  :git  =>  'git@github.com:16c7x/puppet-module-ssh.git',
+#  #:git  =>  'git@github.com:ghoneycutt/puppet-module-ssh.git',
+#  :ref  =>  'master'
 
-mod "puppet-selinux",
-  :git  =>  'git@github.com:voxpupuli/puppet-selinux.git',
-  :ref  =>  'master'
+#mod "puppet-selinux",
+#  :git  =>  'git@github.com:voxpupuli/puppet-selinux.git',
+#  :ref  =>  'master'
 
 
