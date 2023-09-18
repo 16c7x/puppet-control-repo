@@ -1,0 +1,9 @@
+---
+message: 'node hiera'
+puppet_enterprise::profile::agent::primary_uris:
+- 'ip-10-138-1-72.eu-west-1.compute.internal'
+puppet_enterprise::profile::agent::server_list:
+- 'ip-10-138-1-72.eu-west-1.compute.internal'
+puppet_enterprise::profile::agent::manage_puppet_conf: false
+puppet_enterprise::profile::agent::pcp_broker_list:
+- 'ip-10-138-1-72.eu-west-1.compute.internal:8142' 
