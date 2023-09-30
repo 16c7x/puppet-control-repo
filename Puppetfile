@@ -39,6 +39,10 @@ mod 'puppetlabs-concat', '6.2.0'
 #  :git  =>  'git@github.com:16c7x/scratch.git',
 #  :ref  =>  'main'
 
+mod "opsgenie_report_processor",
+  :git  =>  'git@github.com:16c7x/opsgenie_report_processor.git',
+  :ref  =>  'dev'
+
 #mod "cis_profile",
 #  :git  =>  'git@github.com:16c7x/cis_profile.git',
 #  :ref  =>  'master'
