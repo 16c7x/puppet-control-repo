@@ -3,7 +3,9 @@ plan miscellanea::upgrade(
 ) {
   $results = run_task('miscellanea::root_space', $targets)
 
-  return($results)
+  $answered_true = $results.filter |$result| { $result[answer] == true }
+
+  return($answered_true)
 
   $subset = $answered_true.map |$result| { $result.target }
 
