@@ -3,13 +3,13 @@ plan miscellanea::upgrade(
 ) {
   $rootstatus = run_task('miscellaneac::root_space', $targets)
 
-  if $rootstatus != 0 then
-  fail_plan('Root partition is full')
-  end
+  if $rootstatus != 0 {
+    fail_plan('Root partition is full')
+  }
 
   $patchstatus = run_task('miscellanea::yum_update', $targets)
 
-  if $patchstatus!= 0 then
-  fail_plan('patching failed')
-  end
+  if $patchstatus!= 0 {
+    fail_plan('patching failed')
+  }
 }
