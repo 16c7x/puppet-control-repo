@@ -8,9 +8,7 @@ plan miscellanea::upgrade(
     $stack_status = $item.status
   }
 
-  return($stack_status)
-
-  if $rootstatus != 0 {
+  if $stack_status == 'failure {
     fail_plan('Root partition is full')
   }
 
