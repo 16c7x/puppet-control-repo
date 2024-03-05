@@ -4,7 +4,7 @@ plan miscellanea::upgrade(
   $rootstatus = run_task('miscellanea::root_space', $targets)
 
   $stack_status = $rootstatus.reduce({}) | $res, $item | {
-    $data = $item.value.output
+    $data = $item.value
     $stack_status = $item.status
   }
 
