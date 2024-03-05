@@ -1,14 +1,14 @@
 plan miscellanea::upgrade(
   TargetSpec $targets,
 ) {
-  $rootstatus = run_task('miscellanea::root_space', $targets, { format => 'json' })
+  $rootstatus = run_task('miscellanea::root_space', $targets)
 
   $stack_status = $rootstatus.reduce({}) | $res, $item | {
     $data = $item.value
     $stack_name = $item.status
   }
 
-  return($stack_name)
+  return($stack_status[0])
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
