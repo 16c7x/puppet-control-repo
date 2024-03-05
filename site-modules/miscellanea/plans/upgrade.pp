@@ -4,11 +4,11 @@ plan miscellanea::upgrade(
   $rootstatus = run_task('miscellanea::root_space', $targets)
 
   $stack_status = $rootstatus.reduce({}) | $res, $item | {
-    $data = $item.value[_output]
+    $data = $item.value.output
     $stack_status = $item.status
   }
 
-  return($stack_status)
+  return($data)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
