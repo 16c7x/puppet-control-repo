@@ -1,7 +1,7 @@
 plan miscellanea::upgrade(
   TargetSpec $targets,
 ) {
-  $rootstatus = run_task('miscellanea::root_space', $targets)
+  $rootstatus = run_task('miscellanea::root_space', $targets, { format => 'json' })
 
   $stack_status = $rootstatus.reduce({}) | $res, $item | {
     $data = $item.value
