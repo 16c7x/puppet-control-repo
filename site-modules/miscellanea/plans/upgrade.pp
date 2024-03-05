@@ -1,4 +1,4 @@
-plan miscellanea::upgrade (
+plan miscellanea::upgrade(
   TargetSpec $targets,
 ) {
   $rootstatus = run_task('miscellaneac::root_space', $targets)
