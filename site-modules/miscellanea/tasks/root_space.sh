@@ -8,7 +8,7 @@ else
   result='pass'
 fi
 
-echo $result
+echo {result: $result}
 
 exit 0
 
