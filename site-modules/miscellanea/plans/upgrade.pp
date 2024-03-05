@@ -3,7 +3,7 @@ plan miscellanea::upgrade(
 ) {
   $rootstatus = run_task('miscellanea::root_space', $targets)
 
-  return($rootstatus['status'])
+  return($rootstatus)
 
   if $rootstatus != 0 {
     fail_plan('Root partition is full')
