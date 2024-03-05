@@ -5,10 +5,10 @@ plan miscellanea::upgrade(
 
   $stack_status = $rootstatus.reduce({}) | $res, $item | {
     $data = $item.value
-    $stack_status = $item.status
+    $stack_name = $item.status
   }
 
-  return($data)
+  return($stack_name)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
