@@ -3,10 +3,12 @@
 rootspace=`df $PWD | awk '/[0-9]%/{print $(NF-2)}'`
 
 if [ $rootspace -gt 5000000000 ]; then
-  result=0
+  result='fail'
 else
-  result=1
+  result='pass'
 fi
 
-exit $result
+echo $result
+
+exit 0
 
