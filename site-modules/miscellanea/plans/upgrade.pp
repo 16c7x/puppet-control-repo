@@ -3,7 +3,7 @@ plan miscellanea::upgrade(
 ) {
   $results = run_task('miscellanea::root_space', $targets)
 
-  $answered_true = $results.filter |$result| { $result[answer] == true }
+  $answered_true = $results.filter |$result| { $result[answer] == pass }
 
   return($answered_true)
 
