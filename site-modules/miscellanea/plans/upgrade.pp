@@ -1,12 +1,7 @@
 plan miscellanea::upgrade(
   TargetSpec $targets,
 ) {
-  $rootstatus = run_task('miscellanea::root_space', $targets)
-
-  $stack_status = $rootstatus.reduce({}) | $res, $item | {
-    $data = $item.value
-    $stack_name = $item.status
-  }
+  $results = run_task('miscellanea::root_space', $targets)
 
   $answered_true = $results.filter |$result| { $result[answer] == true }
 
