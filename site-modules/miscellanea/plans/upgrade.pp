@@ -4,6 +4,8 @@ plan miscellanea::upgrade(
   # Run a test on each machine in the list to see if it has enough disk space
   $results = run_task('miscellanea::root_space', $targets)
 
+  return($results)
+
   # Filter out the result sets of the nodes that passed the test
   $pass_output = $results.filter |$item| { $item['_output'] =~ /pass/ }
 
