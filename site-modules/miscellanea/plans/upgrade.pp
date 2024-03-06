@@ -7,7 +7,7 @@ plan miscellanea::upgrade(
   #  $result.value
   #}
 
-  $pass_output = $json_data.filter |$item| { $item['_output'] =~ /pass/ }
+  $pass_output = $results.filter |$item| { $item['_output'] =~ /pass/ }
 
   $pass_value = $pass_output.map |$item| { $item['_output'] }
 
