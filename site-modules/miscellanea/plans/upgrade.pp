@@ -5,7 +5,7 @@ plan miscellanea::upgrade(
 
   $subset = $results.map |$result| { $result.value }
 
-  #$answered_true = $results.filter |$result| { $result[answer] == true }
+  $answered_true = $results.filter |$result| { $result[answer] == true }
 
   return($subset)
 
