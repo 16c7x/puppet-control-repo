@@ -5,7 +5,7 @@ plan miscellanea::upgrade(
 
   $subset = $results.map |$result| { $result.target }
 
-  return($subset)
+  return($results)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
