@@ -13,7 +13,7 @@ plan miscellanea::upgrade(
 
   #$answered_true = $results.filter |$result| { $result[] == true }
 
-  return($pass_value)
+  return($pass_output)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
