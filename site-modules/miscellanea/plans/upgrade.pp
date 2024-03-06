@@ -10,8 +10,6 @@ plan miscellanea::upgrade(
   # Extract the hostnames from the result set of nodes that passed
   $pass_list = $pass_output.map |$item| { $item.target }
 
-  return($pass_list)
-
   # Run the patching task on the list of nodes that passed the test
   $patchstatus = run_task('miscellanea::yum_update', $pass_list)
 
