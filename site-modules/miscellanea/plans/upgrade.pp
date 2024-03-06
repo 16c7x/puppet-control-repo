@@ -3,9 +3,11 @@ plan miscellanea::upgrade(
 ) {
   $results = run_task('miscellanea::root_space', $targets)
 
-  $subset = $results.map |$result| { $result.target }
+  $subset = $results.map |$result| { $result.value }
 
-  return($results)
+  #$answered_true = $results.filter |$result| { $result[answer] == true }
+
+  return($subset)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
