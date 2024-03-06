@@ -9,11 +9,11 @@ plan miscellanea::upgrade(
 
   $pass_output = $results.filter |$item| { $item['_output'] =~ /pass/ }
 
-  $pass_value = $pass_output.map |$item| { $item['_output'] }
+  $pass_value = $pass_output.map |$item| { $item.target }
 
   #$answered_true = $results.filter |$result| { $result[] == true }
 
-  return($pass_output)
+  return($pass_value)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
