@@ -3,13 +3,17 @@ plan miscellanea::upgrade(
 ) {
   $results = run_task('miscellanea::root_space', $targets)
 
-  $subset = $results.map |$result| {
-    $result.value
-  }
+  #$subset = $results.map |$result| {
+  #  $result.value
+  #}
 
-  #$answered_true = $results.filter |$result| { $result[answer] == true }
+  $pass_output = $json_data.filter |$item| { $item['_output'] =~ /pass/ }
 
-  return($subset)
+  $pass_value = $pass_output.map |$item| { $item['_output'] }
+
+  #$answered_true = $results.filter |$result| { $result[] == true }
+
+  return($pass_value)
 
   if $stack_status == 'fail' {
     fail_plan('Root partition is full')
