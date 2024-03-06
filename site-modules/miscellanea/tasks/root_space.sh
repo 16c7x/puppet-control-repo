@@ -10,5 +10,5 @@ fi
 
 echo $result
 
-exit 1
+exit 0
 
