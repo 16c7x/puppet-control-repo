@@ -4,10 +4,10 @@ plan miscellanea::upgrade(
   # Run a test on each machine in the list to see if it has enough disk space
   $results = run_task('miscellanea::root_space', $targets)
 
-  return($results)
-
   # Filter out the result sets of the nodes that passed the test
   $pass_output = $results.filter |$item| { $item['_output'] =~ /pass/ }
+
+  return($pass_output)
 
   # Extract the hostnames from the result set of nodes that passed
   $pass_list = $pass_output.map |$item| { $item.target }
