@@ -3,21 +3,15 @@ forge 'https://forge.puppet.com'
 # Versions should be updated to be the latest at the time you start
 
 # General Puppet requirements
-mod 'puppetlabs-stdlib', '8.6.0'
+mod 'puppetlabs-stdlib', '9.6.0'
 mod 'puppetlabs-concat', '6.2.0'
-# Requirements for cd4pe
-#mod 'puppetlabs-cd4pe', '2.0.0'
-#mod 'puppetlabs-puppet_authorization', '0.5.1'
-#mod 'puppetlabs-hocon', '1.1.0'
-#mod 'puppetlabs-docker', '7.0.0'
-#mod 'puppetlabs-apt', '9.1.0'
-#mod 'puppetlabs-translate', '2.2.0'
-#mod 'puppetlabs-cd4pe_jobs', '1.1.0'
+mod 'puppetlabs-apt', '9.4.0'
+mod 'puppetlabs-powershell', '6.0.0'
+mod 'puppetlabs-pwshlib', '1.1.1'
+mod 'puppetlabs-reboot', '5.0.0'
+mod 'puppetlabs-docker', '9.1.0'
 # Requirements for Windows
 #mod 'puppetlabs-chocolatey', '5.0.2'
-#mod 'puppetlabs-reboot', '5.0.0'
-#mod 'puppetlabs-powershell', '6.0.0'
-#mod 'puppetlabs-pwshlib', '0.4.1'
 #mod 'puppetlabs-registry', '3.1.0'
 #mod 'puppetlabs-acl', '3.1.1'
 #mod 'puppet-windowsfeature', '3.2.2'
