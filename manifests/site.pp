@@ -6,6 +6,11 @@
 #
 # Global objects like filebuckets and resource defaults should go in this file,
 # as should the default node definition if you want to use it.
+if $::kernel == 'windows' {
+  Package {
+    provider => 'chocolatey',
+  }
+}
 
 ## Active Configurations ##
 
@@ -25,9 +30,8 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  # We're not using this, use site-modules/profile/manifests/master/nodegroups.pp instead.
-  notify { 'a message' :
-    message => lookup(message),
+  if $::role {
+    include $::role
   }
 }
 
