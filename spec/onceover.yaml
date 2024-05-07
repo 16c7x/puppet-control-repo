@@ -1,5 +1,4 @@
 classes:
-  - role::lab_cd4pe
   - role::all_in_one_pe
   - role::windows_webservice
   - role::test_application
@@ -14,7 +13,6 @@ class_groups:
     - role::windows_desktop
     - role::windows_webservice
   linux_roles:
-    - role::lab_cd4pe
     - role::all_in_one_pe
     - role::test_application
 

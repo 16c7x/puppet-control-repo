@@ -8,8 +8,12 @@ class profile::baseline::windows (
   $localdirectory = 'C:\Program Files\bobsthings',
 ){
   # Install chocolatey and then set it as our default package provider.
-  require chocolatey
-  #class {'chocolatey': }
+  # require chocolatey
+  
+  class {'chocolatey': 
+    chocolatey_version => '2.2.2',
+  }
+  
   Package { provider => chocolatey, }
 
   package { '7zip.install':
