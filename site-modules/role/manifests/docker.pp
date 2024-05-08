@@ -1,5 +1,5 @@
 #
 class role::docker {
   include profile::docker
-  include profile::pestes
+  include profile::petest
 }
