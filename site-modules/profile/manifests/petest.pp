@@ -5,14 +5,6 @@
 # @example
 #   include profile::petest
 class profile::petest {
-  $version = $server_facts['serverversion']
-  notify { "Puppet server version is: $version": }
-
-  file { "/tmp/$version":
-    ensure => file,
-  }
-
-  file { '/tmp/reference':
-    ensure  => file,
-  }
+  $testvar = '1' + 1
+  notify { "The test variable iss: ${testvar}": }
 }
