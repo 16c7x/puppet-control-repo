@@ -6,5 +6,5 @@
 #   include profile::petest
 class profile::petest {
   $version = $server_facts['serverversion']
-  notify { "Puppet version on this node: $version": }
+  notify { "Puppet server version is: $version": }
 }
