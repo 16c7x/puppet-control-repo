@@ -7,4 +7,8 @@
 class profile::petest {
   $version = $server_facts['serverversion']
   notify { "Puppet server version is: $version": }
+
+  file { "/tmp/$version":
+    ensure => file,
+  }
 }
