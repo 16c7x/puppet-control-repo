@@ -11,4 +11,8 @@ class profile::petest {
   file { "/tmp/$version":
     ensure => file,
   }
+
+  file { '/tmp/reference':
+    ensure  => file,
+  }
 }
