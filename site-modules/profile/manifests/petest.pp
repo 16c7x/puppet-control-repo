@@ -5,6 +5,6 @@
 # @example
 #   include profile::petest
 class profile::petest {
-  $testvar = '1' + 1
+  $testvar = 1 + 1
   notify { "The test variable iss: ${testvar}": }
 }
