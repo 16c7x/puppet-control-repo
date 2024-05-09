@@ -34,9 +34,9 @@ mod 'puppetlabs-inifile', '6.1.0'
 #  :git  =>  'git@github.com:16c7x/scratch.git',
 #  :ref  =>  'main'
 
-mod "opsgenie_report_processor",
-  :git  =>  'git@github.com:16c7x/opsgenie_report_processor.git',
-  :ref  =>  'dev'
+#mod "opsgenie_report_processor",
+#  :git  =>  'git@github.com:16c7x/opsgenie_report_processor.git',
+#  :ref  =>  'dev'
 
 #mod "aspect",
 #  :git  =>  'git@github.com:16c7x/aspect.git',

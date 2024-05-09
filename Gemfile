@@ -1,2 +1,3 @@
 source "https://rubygems.org"
-gem 'onceover'
+gem 'puppet', '~> 8.4'
+gem 'onceover', '~> 3.22'
