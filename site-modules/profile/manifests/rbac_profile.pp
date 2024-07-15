@@ -9,7 +9,7 @@ class profile::rbac_profile {
     roles        => [ 1,2 ],
   }
 
-  rbac_role { 'Viewers':
+  rbac_role { 'new_role':
     ensure      => 'present',
     description => 'Viewers',
     permissions => [
