@@ -30,6 +30,10 @@ mod 'puppetlabs-inifile', '6.1.0'
 #mod 'puppetlabs-puppet_metrics_dashboard', '2.4.0'
 #mod 'puppetlabs-peadm', '3.11.1'
 
+#### TESTING
+mod 'pltraining-rbac', '0.0.10'
+####
+
 #mod "scratch",
 #  :git  =>  'git@github.com:16c7x/scratch.git',
 #  :ref  =>  'main'
