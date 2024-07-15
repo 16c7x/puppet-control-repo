@@ -6,11 +6,11 @@
 #
 # Global objects like filebuckets and resource defaults should go in this file,
 # as should the default node definition if you want to use it.
-if $::kernel == 'windows' {
-  Package {
-    provider => 'chocolatey',
-  }
-}
+#if $::kernel == 'windows' {
+#  Package {
+#    provider => 'chocolatey',
+#  }
+#}
 
 ## Active Configurations ##
 
