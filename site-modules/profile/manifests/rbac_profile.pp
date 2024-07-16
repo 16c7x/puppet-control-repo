@@ -25,8 +25,8 @@ class profile::rbac_profile {
     }],
   }
 
-#  rbac_group { 'admins':
-#    ensure => 'present',
-#    roles  => ['Administrators'],
-#  }
+  rbac_group { 'admins':
+    ensure => 'present',
+    roles  => ['Administrators'],
+  }
 }
