@@ -27,6 +27,6 @@ class profile::rbac_profile {
 
   rbac_group { 'scientists':
     ensure => 'present',
-    roles  => ['Administrators'],
+    roles  => ['Operators'],
   }
 }
