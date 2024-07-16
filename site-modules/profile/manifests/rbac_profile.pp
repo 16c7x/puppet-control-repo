@@ -1,4 +1,4 @@
-#
+t#
 class profile::rbac_profile {
   rbac_user { 'testing account':
     ensure       => present,
