@@ -1,4 +1,4 @@
-t#
+#
 class profile::rbac_profile {
   rbac_user { 'testing account':
     ensure       => present,
@@ -10,7 +10,7 @@ class profile::rbac_profile {
   }
 
   rbac_role { 'new_role':
-    ensure      => 'present',
+    ensure      => 'absent',
     description => 'Viewers',
     permissions => [
     {
