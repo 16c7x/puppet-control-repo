@@ -1,14 +1,5 @@
 #
 class profile::rbac_profile {
-  rbac_user { 'testing account':
-    ensure       => present,
-    name         => 'testing',
-    display_name => 'Just a testing account',
-    email        => 'testing@puppetlabs.com',
-    password     => 'puppetlabs',
-    roles        => [ 1,2 ],
-  }
-
   rbac_role { 'new_role':
     ensure      => 'absent',
     description => 'Viewers',
