@@ -27,12 +27,9 @@ File { backup => false }
 #
 # Note that node definitions in this file are merged with node data from the
 # Puppet Enterprise console and External Node Classifiers (ENC's).
-#
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  if $::role {
-    include $::role
+  if $role != undef {
+    include $role
   }
 }
-
-
