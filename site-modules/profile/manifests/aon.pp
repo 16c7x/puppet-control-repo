@@ -7,7 +7,9 @@ class profile::aon {
     ensure => 'installed',
   }
 
-  package { $excluded_packages:
-    ensure => 'absent',
+  unless $excluded_packages == undef {
+    package { $excluded_packages:
+      ensure => 'absent',
+    }
   }
 }
