@@ -1,8 +1,13 @@
 # 
 class profile::aon {
-  $package_array = lookup('packages', { 'merge' => 'unique' })
+  $required_packages = lookup('required_packages', { 'merge' => 'unique' })
+  $excluded_packages = lookup('excluded_packages', { 'merge' => 'unique' }) 
 
-  package { $package_array:
+  package { $required_packages:
     ensure => 'installed',
+  }
+
+  package { $excluded_packages:
+    ensure => 'absent',
   }
 }

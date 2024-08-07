@@ -1,2 +1,5 @@
-packages:
+required_packages:
     - 'mailx'
+
+excluded_packages:
+    - 'finger'
