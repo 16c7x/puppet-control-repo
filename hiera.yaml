@@ -5,7 +5,6 @@
     lookup_key: eyaml_lookup_key
     paths:
     - "nodes/%{::trusted.certname}.yaml"
-    - "locations/%{::location}.yaml"
     - 'common.yaml'
     datadir: "/etc/puppetlabs/code/environments/%{environment}/data"
     options:
