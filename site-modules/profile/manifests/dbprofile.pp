@@ -1,6 +1,6 @@
 #
 class profile::dbprofile {
-  if ::db_env == 'prod' {
+  if $db_env == 'prod' {
     notify { 'A':}
   } else {
     notify { 'B':}
