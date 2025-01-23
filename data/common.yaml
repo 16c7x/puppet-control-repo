@@ -7,7 +7,7 @@ required_packages:
     - 'unzip'
     - 'tree'
 
-profile::test::source
+profile::test::source:
   - 216.239.35.3
 
 
