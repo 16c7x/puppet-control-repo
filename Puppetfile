@@ -30,6 +30,7 @@ mod 'puppetlabs-inifile', '6.1.0'
 #mod 'puppetlabs-puppet_metrics_dashboard', '2.4.0'
 #mod 'puppetlabs-peadm', '3.11.1'
 mod 'puppetlabs-cd4pe_jobs', '1.7.0'
+mod 'puppetlabs-ntp', '11.0.0'
 
 #### TESTING
 mod 'pltraining-rbac', '0.0.10'
