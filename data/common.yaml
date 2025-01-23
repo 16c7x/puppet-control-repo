@@ -7,6 +7,9 @@ required_packages:
     - 'unzip'
     - 'tree'
 
+profile::test::source
+  - 216.239.35.3
+
 
 
 gitlab::gitlab_rails:
