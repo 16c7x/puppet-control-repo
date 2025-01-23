@@ -1,12 +1,21 @@
 #
 class profile::test {
-  if $facts['datacentre'] == 'A' {
-    $source = ['216.239.35.0']
-  } else {
-    $source = ['216.239.35.1']
+  package { 'ntp':
+    ensure => installed,
   }
 
-  class { 'ntp':
-    servers => $source,
+  if $facts['datacentre'] == 'A' {
+    $source = '216.239.35.0'
+  } else {
+    $source = '216.239.35.1'
+  }
+
+  file { '/etc/ntp.conf':
+    content => "server ${source} iburst",
+  }
+
+  service { 'ntp':
+    ensure => running,
+    enable => true,
   }
 }
