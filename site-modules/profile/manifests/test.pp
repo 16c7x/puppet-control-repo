@@ -1,5 +1,5 @@
 #
-class profile::baseline {
+class profile::test {
   if $facts['datacentre'] == 'A' {
     $source = '10.1.1.0'
   } else {
