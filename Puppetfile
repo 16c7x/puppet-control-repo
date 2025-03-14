@@ -20,7 +20,7 @@ mod 'puppetlabs-iis', '10.0.0'
 #mod 'ayohrling-local_security_policy', '0.6.3'
 mod 'ghoneycutt-ssh', '5.0.0'
 #mod 'puppetlabs-sshkeys_core', '2.1.0'
-mod 'puppetlabs-inifile', '6.1.0'
+mod 'puppetlabs-inifile', '6.1.1'
 #mod 'puppet-gitlab', '5.1.0'
 #mod 'fervid-secure_linux_cis', '2.1.15'
 #mod 'puppetlabs-haproxy', '4.3.0'
@@ -31,6 +31,10 @@ mod 'puppetlabs-inifile', '6.1.0'
 #mod 'puppetlabs-peadm', '3.11.1'
 mod 'puppetlabs-cd4pe_jobs', '1.7.0'
 mod 'puppetlabs-ntp', '11.0.0'
+
+# Comply
+mod 'puppet/archive', '7.1.0'
+mod 'puppetlabs/comply', '3.3.0'
 
 #### TESTING
 mod 'pltraining-rbac', '0.0.10'
