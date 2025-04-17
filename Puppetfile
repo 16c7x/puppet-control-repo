@@ -65,4 +65,8 @@ mod 'pltraining-rbac', '0.0.10'
 #  :git  =>  'git@github.com:voxpupuli/puppet-selinux.git',
 #  :ref  =>  'master'
 
+#mod "inventory",
+#  :git  =>  'git@github.com:16c7x/inventory.git',
+#  :ref  =>  'main'
+
 
