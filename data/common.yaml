@@ -14,7 +14,11 @@ required_packages:
 profile::test::source:
   - 216.239.35.3
 
-
+profile::sce_linux::config:
+  profile: 'server'  
+  level: '1'  
+  only:  
+     - 'ensure_filesystem_integrity_is_regularly_checked'
 
 gitlab::gitlab_rails:
   omniauth_allow_single_sign_on: saml
