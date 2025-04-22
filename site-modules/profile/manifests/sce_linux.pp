@@ -1,9 +1,16 @@
-# profile/platform/compliance/cem_enforcement.pp
+# A profile to implementthe sce modules
+# @param config
+#   Hash of the enfiorcement config
+# @param benchmark
+#   The bbenchmark to use, defaults to CIS
+#
+# profile::sce_linux.pp
 class profile::sce_linux (
-  Optional[Hash] $config = {}
-){
-  class { 'sce_linux': 
-    benchmark => 'cis',
+  Hash $config = {},
+  String $benchmark = 'cis',
+) {
+  class { 'sce_linux':
+    benchmark => $benchmark,
     config    => $config,
   }
 }
