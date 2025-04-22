@@ -41,7 +41,7 @@ mod 'puppetlabs-ntp', '11.0.0'
 # Comply
 mod 'puppet/archive', '7.1.0'
 mod 'puppetlabs/comply', '3.3.1'
-mod 'puppetlabs-sce_linux', '2.3.2'
+#mod 'puppetlabs-sce_linux', '2.3.2'
 
 #### TESTING
 mod 'pltraining-rbac', '0.0.10'
