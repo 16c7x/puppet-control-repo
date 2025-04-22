@@ -12,7 +12,7 @@ mod 'puppetlabs-augeas_core', '1.5.0'
 mod 'puppetlabs-firewall', '8.1.5'
 mod 'puppet-firewalld', '5.0.0'
 mod 'puppet-logrotate', '8.0.0'
-mod 'puppet-selinux', '5.0.0'
+mod 'puppetlabs-sce_linux', '2.3.2'
 mod 'puppet-systemd', '8.2.0'
 # Requirements for Windows
 mod 'puppetlabs-chocolatey', '8.0.0'
