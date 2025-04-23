@@ -1,7 +1,20 @@
 profile::sce_linux::config:
-  profile: 'server' 
-  level: '1' 
-  only: 
-    - 'ensure_aide_is_installed' 
   ignore: 
-    - 'ensure_aide_is_installed'
+    - ensure_permissions_on_etcsshsshd_config_are_configured
+    - ensure_ssh_permituserenvironment_is_disabled
+    - ensure_ssh_ignorerhosts_is_enabled
+    - ensure_system_wide_crypto_policy_is_not_over_ridden
+    - ensure_ssh_warning_banner_is_configured
+    - ensure_ssh_maxauthtries_is_set_to_4_or_less
+    - ensure_ssh_maxstartups_is_configured
+    - ensure_ssh_maxsessions_is_set_to_10_or_less
+    - ensure_ssh_logingracetime_is_set_to_one_minute_or_less
+    - ensure_permissions_on_ssh_private_host_key_files_are_configured
+    - ensure_ssh_idle_timeout_interval_is_configured
+    - ensure_permissions_on_ssh_public_host_key_files_are_configured
+    - ensure_ssh_access_is_limited
+    - ensure_ssh_loglevel_is_appropriate
+    - ensure_ssh_pam_is_enabled
+    - ensure_ssh_root_login_is_disabled
+    - ensure_ssh_hostbasedauthentication_is_disabled
+    - ensure_ssh_permitemptypasswords_is_disabled
