@@ -3,6 +3,5 @@ profile::sce_linux::config:
   level: '1' 
   only: 
     - 'ensure_aide_is_installed' 
-    - 'ensure_filesystem_integrity_is_regularly_checked' 
   ignore: 
     - 'ensure_aide_is_installed'
