@@ -32,4 +32,5 @@ node default {
   if $facts['role'] != undef {
     include $facts['role']
   }
+  $::participant = 'acme_corp'
 }
