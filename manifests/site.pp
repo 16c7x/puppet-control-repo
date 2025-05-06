@@ -34,6 +34,7 @@ node default {
   if $facts['role'] != undef {
     include $facts['role']
   }
+  $participant = 'acme_corp'
   $my_message = lookup('message')
   notify { "The message is: ${my_message}": }
 }
