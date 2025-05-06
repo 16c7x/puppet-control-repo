@@ -33,4 +33,5 @@ node default {
     include $facts['role']
   }
   $::participant = 'acme_corp'
+  notify { "Global participant is: $::participant": }
 }
