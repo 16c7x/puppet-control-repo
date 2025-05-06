@@ -20,7 +20,7 @@ File { backup => false }
 
 ## Node Definitions ##
 
-$participant = 'acme_corp'
+#$participant = 'acme_corp'
 
 # The default node definition matches any node lacking a more specific node
 # definition. If there are no other node definitions in this file, classes
