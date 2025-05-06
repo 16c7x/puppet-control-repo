@@ -36,4 +36,9 @@ node default {
   }
   $my_message = lookup('message')
   notify { "The message is: ${my_message}": }
+
+  $vars = getvar('::')
+  $vars.each |$name, $value| {
+  notify { "Global: ${name} = ${value}": }
+  }
 }
