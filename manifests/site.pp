@@ -34,5 +34,6 @@ node default {
   if $facts['role'] != undef {
     include $facts['role']
   }
-  notify { "Global participant is: $::participant": }
+  $my_message = lookup('message')
+  notify { "The message is: ${my_message}": }
 }
