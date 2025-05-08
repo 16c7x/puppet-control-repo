@@ -36,6 +36,4 @@ node default {
   }
   $my_message = lookup('message')
   notify { "The message is: ${my_message}": }
-
-  }
 }
