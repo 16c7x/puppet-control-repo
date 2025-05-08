@@ -20,7 +20,16 @@ File { backup => false }
 
 ## Node Definitions ##
 
-$participant = 'evil_corp'
+case $server {
+  'ip-10-138-1-59.eu-west-1.compute.internal': {
+    $participant = 'ua'
+  }
+  default: {
+    $participant = 'ub'
+  }
+}
+
+notify { "Selected participant: ${participant}": }
 
 # The default node definition matches any node lacking a more specific node
 # definition. If there are no other node definitions in this file, classes
