@@ -20,7 +20,7 @@ File { backup => false }
 
 ## Node Definitions ##
 
-case ::puppet_server {
+case $puppet_server {
   'ip-10-138-1-59.eu-west-1.compute.internal': {
     $participant = 'ua'
   }
@@ -28,6 +28,8 @@ case ::puppet_server {
     $participant = 'ub'
   }
 }
+
+notify { "Selected participant: ${puppet_server}": }
 
 notify { "Selected participant: ${participant}": }
 
