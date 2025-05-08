@@ -20,7 +20,7 @@ File { backup => false }
 
 ## Node Definitions ##
 
-case $server {
+case ::puppet_server {
   'ip-10-138-1-59.eu-west-1.compute.internal': {
     $participant = 'ua'
   }
