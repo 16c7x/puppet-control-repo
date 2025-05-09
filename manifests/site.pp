@@ -23,7 +23,7 @@ File { backup => false }
 $participant = get_participant()
 
 if !$participant or $participant == '' {
-  fail('Participant value is missing or empty')
+  fail('Invalid participant in /etc/participant.yaml, should be participant: xx')
 } else {
   notify { "Participant value: ${participant}": }
 }
