@@ -1,6 +1,9 @@
+require 'yaml'
+
 Puppet::Functions.create_function(:get_participant) do
   def get_participant()    
-    File.read('/etc/puppetlabs/server_data/my_param.txt').strip
+    data = YAML.load_file('/etc/participant.yaml')
+    data['participant']
     #'ub'
   end
 end
