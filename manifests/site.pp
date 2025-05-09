@@ -23,14 +23,14 @@ File { backup => false }
 $participant = get_participant()
 notify { "Participant is: ${participant}": }
 
-case $puppet_server {
-  'ip-10-138-1-59.eu-west-1.compute.internal': {
-    $participant = 'ua'
-  }
-  default: {
-    fail('This node does not have a valid participant')
-  }
-}
+#case $puppet_server {
+#  'ip-10-138-1-59.eu-west-1.compute.internal': {
+#    $participant = 'ua'
+#  }
+#  default: {
+#    fail('This node does not have a valid participant')
+#  }
+#}
 
 notify { "Selected participant: ${puppet_server}": }
 
