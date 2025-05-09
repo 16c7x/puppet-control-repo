@@ -20,6 +20,9 @@ File { backup => false }
 
 ## Node Definitions ##
 
+$participant = get_participant()
+notify { "Participant is: ${participant}": }
+
 case $puppet_server {
   'ip-10-138-1-59.eu-west-1.compute.internal': {
     $participant = 'ua'
