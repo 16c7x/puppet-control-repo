@@ -21,20 +21,12 @@ File { backup => false }
 ## Node Definitions ##
 
 $participant = get_participant()
-notify { "Participant is: ${participant}": }
 
-#case $puppet_server {
-#  'ip-10-138-1-59.eu-west-1.compute.internal': {
-#    $participant = 'ua'
-#  }
-#  default: {
-#    fail('This node does not have a valid participant')
-#  }
-#}
-
-notify { "Selected participant: ${puppet_server}": }
-
-notify { "Selected participant: ${participant}": }
+if !$participant or $participant == '' {
+  fail('Participant value is missing or empty')
+} else {
+  notify { "Participant value: ${participant}": }
+}
 
 # The default node definition matches any node lacking a more specific node
 # definition. If there are no other node definitions in this file, classes
