@@ -1,6 +1,6 @@
 #
 class profile::test (
-  $source
+  $source = time1.google.com,
 ) {
   class { 'ntp':
     servers => $source,
