@@ -1,9 +1,13 @@
 #
 class profile::letsencrypt {
   class { 'letsencrypt':
-    config => {
-      email  => 'foo@example.com',
-      server => 'https://acme-v02.api.letsencrypt.org/directory',
-    },
+    email => 'admin@example.com',
+  }
+
+  letsencrypt::certonly { 'puppet.example.com':
+    domains        => ['puppet.example.com'],
+    plugin         => 'webroot',
+    webroot_paths  => ['/opt/puppetlabs/server/data/console-services/public'],
+    manage_cron    => true,  # enables auto-renewal 
   }
 }
