@@ -7,9 +7,6 @@ class profile::letsencrypt {
   letsencrypt::certonly { 'example.com':
     domains       => ['example.com', 'www.example.com'],
     plugin        => 'webroot',
-    webroot_paths => {
-      'example.com'     => '/var/www/html',
-      'www.example.com' => '/var/www/html',
-    },
+    webroot_paths => ['/var/www/html', '/var/www/html'],
   }
 }
