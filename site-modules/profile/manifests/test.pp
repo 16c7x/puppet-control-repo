@@ -1,4 +1,4 @@
-#
+# template code - debuglevel = <% $profile::test::source {-%>
 class profile::test (
   $source = time1.google.com,
 ) {
