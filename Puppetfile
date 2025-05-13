@@ -37,6 +37,7 @@ mod 'puppetlabs-inifile', '6.2.0'
 mod 'puppetlabs-cd4pe_jobs', '1.7.0'
 mod 'puppetlabs-ntp', '11.0.0'
 mod 'puppet-letsencrypt', '12.0.0'
+mod 'puppet-epel', '5.0.0'
 
 #### TESTING
 mod 'pltraining-rbac', '0.0.10'
