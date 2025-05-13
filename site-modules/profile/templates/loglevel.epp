@@ -1,0 +1,2 @@
+# This file is managed by Puppet. DO NOT EDIT.
+log_level: <%= $profile::app_debug::log_level || '0' %>
