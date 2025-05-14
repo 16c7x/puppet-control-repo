@@ -3,7 +3,7 @@
 #   Log level string
 # 
 class profile::app_debug (
-  String $log_level = '1',
+  String $log_level,
 ) {
   file { '/etc/loglevel.yaml':
     ensure  => file,
