@@ -1,7 +1,10 @@
 # 
+# @param loglevel
+#   Log level string
+# 
 class profile::app_debug (
   String $loglevel = '1',
-) { 
+) {
   file { '/etc/loglevel.yaml':
     ensure  => file,
     owner   => 'root',
