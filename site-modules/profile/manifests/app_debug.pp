@@ -10,6 +10,6 @@ class profile::app_debug (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => epp('profile/loglevel.epp'),
+    content => epp('profile/loglevel.epp', { 'log_level' => $loglevel }),
   }
 }
