@@ -1,4 +1,4 @@
 #
 class role::postgrestest {
-  include ::profile::postgres
+  include profile::postgres
 }
