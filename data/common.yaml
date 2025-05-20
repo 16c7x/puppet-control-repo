@@ -6,7 +6,7 @@ lookup_options:
 profile::test::source:
   - time3.google.com
 
-testlevel: 'level 1'
+testlevel: 'level 2'
 
 profile::app_debug::log_level: '4'
 
